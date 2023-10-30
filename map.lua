@@ -3,7 +3,7 @@
  
 -- http://help.interfaceware.com/v6/codemap-example
  
-local codemap = {}
+codemap = {}
  
 -- Make a set
 -- local MySet = codemap.set{"Fred", "Bruce", "Jim"}
