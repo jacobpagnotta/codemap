@@ -1,6 +1,7 @@
 -- This code map module has a number of useful helper 
 -- routines for doing mapping and checking codes etc.
  
+-- TODO - shift the documentation.
 -- http://help.interfaceware.com/v6/codemap-example
  
 codemap = {}
@@ -28,5 +29,7 @@ function codemap.map(m, default)
             return default
          end})
 end
+
+help.map{dir="codemap", methods=codemap}
 
 return codemap
