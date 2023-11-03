@@ -30,6 +30,6 @@ function codemap.map(m, default)
          end})
 end
 
-help.map{dir="codemap/codemap", methods=codemap}
+help.map{dir="codemap", methods=codemap}
 
 return codemap
