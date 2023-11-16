@@ -1,12 +1,12 @@
 {
-    "Description": "<p><strong>Usage:</strong></p><pre class=\"ql-syntax\" spellcheck=\"false\">codemap.set{&lt;key&gt; [, &lt;key&gt; ,...]}\n</pre><p>Make a code set for membership checking, by supplying one or more key values&nbsp;<u>table</u>. Membership is checked against the table keys.</p><p><br></p><p><strong>Note</strong>: The value (in each key/value pair) is set to a placeholder value of 'true'.</p><p><br></p><p><strong>Returns:</strong></p><p>Code set used for membership checking&nbsp;<u>table</u>.</p><p><br></p><p><strong>Examples:</strong></p><pre class=\"ql-syntax\" spellcheck=\"false\">local AmigoSet = codemap.set{'Fred', 'Jim', 'Harry'}\nlocal isMember = AmigoSet['Harry']   -- true\nlocal isMember = AmigoSet['William'] -- false\n</pre>",
+    "Description": "<p>Use this as a tool to check if a code belongs to an expected set.</p><pre class=\"ql-syntax\" spellcheck=\"false\">local AmigoSet = codemap.set{'Fred', 'Jim', 'Harry'}\nlocal isMember = AmigoSet['Harry']   -- true\nlocal isMember = AmigoSet['William'] -- false\n</pre>",
     "Parameters": [
         {
-            "Description": "<p>Codeset: A table of key values&nbsp;<u>table</u>.</p>",
+            "Description": "<p>A table of key values&nbsp;<u>table</u>.</p>",
             "Name": "",
             "Required": false
         }
     ],
     "ParameterTable": false,
-    "SummaryLine": "Make a code set for membership checking, by supplying one or more key values table. Membership is checked against the table keys."
+    "SummaryLine": "Helpful function to check if a code matches a given set of codes."
 }
