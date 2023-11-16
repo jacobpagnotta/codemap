@@ -1,13 +1,13 @@
 {
-    "Description": "<p><strong>Usage:</strong></p><pre class=\"ql-syntax\" spellcheck=\"false\">codemap.map({&lt;key&gt; = &lt;value&gt; [, &lt;key&gt; = &lt;value&gt; ,...]} [, &lt;default&gt;])\n</pre><p>Make a codemap table, to use for mapping one codeset to another.</p><p><br></p><p><strong>Returns:</strong></p><p>A codemap table for codeset mapping&nbsp;<u>table</u>.</p><p><br></p><p><strong>Examples:</strong></p><pre class=\"ql-syntax\" spellcheck=\"false\">local SexMap = codemap.map({'M'='Male',  'F'='Female', 'W'='Female'},'other')\nlocal Mapping = SexCodeMap['M'] -- maps to 'Male'\nlocal Mapping = SexCodeMap['W'] -- maps to 'Female'\nlocal Mapping = SexCodeMap['f'] -- maps to 'other'\n</pre>",
+    "Description": "<p>Use this for convenient mapping:</p><pre class=\"ql-syntax\" spellcheck=\"false\">local SexMap = codemap.map({'M'='Male',  'F'='Female', 'W'='Female'},'other')\nlocal Mapping = SexCodeMap['M'] -- maps to 'Male'\nlocal Mapping = SexCodeMap['W'] -- maps to 'Female'\nlocal Mapping = SexCodeMap['f'] -- maps to 'other'\n</pre><p>See the optional second argument for default option.</p><p><br></p><p>Notice that the function returns a map that you can use.</p>",
     "Parameters": [
         {
-            "Description": "<p>Codemap: A table of key/value pairs to map from/to&nbsp;<u>table</u>.</p>",
+            "Description": "<p>A table of key/value pairs to map from/to&nbsp;<u>table</u>.</p>",
             "Name": "",
             "Required": false
         },
         {
-            "Description": "<p>default: <em>optional</em>: Default value to use if there is no matching key&nbsp;<u>string</u>.</p>",
+            "Description": "<p>Default value to use if there is no matching key&nbsp;<u>string</u>.</p>",
             "Name": "",
             "Required": false
         }
